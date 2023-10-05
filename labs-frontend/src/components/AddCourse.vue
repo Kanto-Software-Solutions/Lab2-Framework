@@ -64,12 +64,10 @@
           event.preventDefault( );
         },
         buildURI( ){
-          let associatePath = "/principal/crear-curso";
+          let associatePath = "/profesor/crear-curso";
           return this.$store.state.backURL + associatePath;
         }
       }
   
     }
   </script>
-  
-  <style scoped>
