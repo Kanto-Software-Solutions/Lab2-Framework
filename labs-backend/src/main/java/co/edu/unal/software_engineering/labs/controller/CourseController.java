@@ -34,7 +34,7 @@ public class CourseController{
         this.userService = userService;
     }
 
-    @PostMapping( value = {"/profesor/crear-curso"} )
+    @PostMapping( value = {"/profes/crear-curso"} )
     public ResponseEntity<Void> createCourse( @RequestBody CoursePOJO coursePojo ){
         Course course = courseService.mapperCourseEntity( coursePojo );
         if( !courseService.isRightCourse( course ) ){

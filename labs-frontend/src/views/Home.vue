@@ -1,16 +1,15 @@
 <template>
-	<div class="container-fluid mt-2">
-		<h1>Bienvenido al dummy</h1>
-		<div class="row">
-			<div class="d-flex">
-				<a type="button" class="btn btn-primary" style="margin: 5px" href="/principal">PRINCIPAL</a>
-				<a type="button" class="btn btn-primary" style="margin: 5px" href="/mis-cursos">VER MIS CURSOS</a>
-				<a type="button" class="btn btn-primary" style="margin: 5px" href="/principal/roles">VER MIS ROLES</a>
-				<a type="button" class="btn btn-primary" style="margin: 5px" href="/principal/nuevo-rol">NUEVO ROL</a>
-				<a type="button" class="btn btn-danger" style="margin: 5px" href="/"> SALIR </a>
+	<div class="container mt-2">
+		<h1>Kanto software solutions</h1>
+			<div class="d-flex justify-content-between w-100">
+				<a type="button" class="btn btn-primary" style="margin: 5px" href="/principal">Inicio</a>
+				<a type="button" class="btn btn-primary" style="margin: 5px" href="/mis-cursos">Mis cursos</a>
+				<a type="button" class="btn btn-primary" style="margin: 5px" href="/principal/roles">Mis roles</a>
+				<a type="button" class="btn btn-primary" style="margin: 5px" href="/principal/nuevo-rol">Agregar rol</a>
+				<a type="button" class="btn btn-warning" style="margin: 5px" href="/profesor">Area Docente</a>
+				<a type="button" class="btn btn-danger" style="margin: 5px" href="/">Salir</a>
 			</div>
 			<router-view></router-view>
-		</div>
 	</div>
 </template>
 

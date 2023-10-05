@@ -1,11 +1,10 @@
 <template>
-	<div class="container-fluid mt-2">
+	<div class="container">
 		<h2>Profesor</h2>
-		<div class="d-flex">
-			<a type="button" class="btn btn-primary" style="margin: 5px" href="/profesor">PRINCIPAL</a>
-			<a type="button" class="btn btn-primary" style="margin: 5px" href="/mis-cursos">VER MIS CURSOS</a>
-			<a type="button" class="btn btn-primary" style="margin: 5px" href="/profesor/crear-curso">NUEVO CURSO</a>
-			<a type="button" class="btn btn-danger" style="margin: 5px" href="/"> SALIR </a>
+		<div class="d-flex justify-content-between">
+			<a type="button" class="btn btn-primary" style="margin: 5px" href="/principal">Inicio</a>
+			<a type="button" class="btn btn-primary" style="margin: 5px" href="/profesor/crear-curso">Añadir curso</a>
+			<a type="button" class="btn btn-danger" style="margin: 5px" href="/"> Salir </a>
 		</div>
 		<router-view></router-view>
 	</div>
