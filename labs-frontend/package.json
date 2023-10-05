@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit"
-  },
+    "serve": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
+    "lint": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service lint"
+},
   "dependencies": {
     "axios": "^0.19.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6",
     "vuex": "^3.2.0"
@@ -20,4 +22,5 @@
     "chai": "^4.1.2",
     "vue-template-compiler": "^2.6.11"
   }
+
 }
